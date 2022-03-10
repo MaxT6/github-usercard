@@ -11,7 +11,7 @@ axios.get("https://api.github.com/users/MaxT6")
     console.log(res)
    const gitCard = cardMarker(res.data);
    cards.appendChild(gitCard);
-  }).catch(err => console.error(err))
+  }).catch(err => console.error(err));
 
 
 /*
@@ -38,8 +38,8 @@ axios.get("https://api.github.com/users/MaxT6")
     user, and adding that card to the DOM.
 */
 
-const followersArray = ["paulMorrow1", "Austin-T-Johnson", "laurensruiz", "tetondan", "dustinmyers", "justsml", "luishrd",
- " bigknell"];
+const followersArray = ["paulMorrow1", "Austin-T-Johnson", "laurensruiz", "keirankozlowski", "CRHarding", "tetondan", "dustinmyers", "justsml", "luishrd",
+ "bigknell"];
 
  followersArray.forEach(elem => {
     cardMarker(elem);
